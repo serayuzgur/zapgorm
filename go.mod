@@ -1,4 +1,4 @@
-module moul.io/zapgorm
+module github.com/serayuzgur/zapgorm
 
 require (
 	github.com/davecgh/go-spew v1.1.1 // indirect
