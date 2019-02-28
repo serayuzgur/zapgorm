@@ -31,7 +31,7 @@ func (l Logger) Print(values ...interface{}) {
 	default:
 		l.zap.Debug("gorm.debug.other",
 			zap.Any("values", values[2:]),
-			zap.String("source", values[1].(string)), // if AddCallerSkip(6) is well defined, we can safely remove this field
+			zap.Any("source", values[1]), // if AddCallerSkip(6) is well defined, we can safely remove this field
 		)
 	}
 }
